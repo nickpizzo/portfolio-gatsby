@@ -6,7 +6,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://vegantransitions.lndo.site/`,
+        baseUrl: `http://dev-vegan-transitions.pantheonsite.io/`,
         apiBase: `jsonapi`,
       },
     },
