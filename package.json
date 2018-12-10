@@ -14,17 +14,10 @@
   },
   "keywords": [
     "gatsby",
-    "starter",
-    "contentful",
     "PWA",
     "portfolio"
   ],
-  "author": "Ema Suriano",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EmaSuriano/gatsby-starter-mate/issues"
-  },
-  "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
     "babel-plugin-styled-components": "^1.7.1",
     "chalk": "^2.4.1",
