@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import { Heading, Flex, Label } from 'rebass';
 import TextLoop from 'react-text-loop';
-import Section from '../components/Section';
-import SocialLink from '../components/SocialLink';
+import { Flex, Heading, Label } from 'rebass';
+import styled from 'styled-components';
+import Developer from '../components/Logo/coding.svg';
 import MouseIcon from '../components/MouseIcon';
+import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 
 const Background = () => (
@@ -38,6 +38,17 @@ const Background = () => (
   </div>
 );
 
+const ResponsiveLogo = styled.img`
+  max-width: 65px;
+  margin-left: 12px;
+`;
+
+const Logo = ({ url, logo, alt = '' }) => (
+  <a href={url} rel="noopener noreferrer" target="_blank">
+    <ResponsiveLogo src={logo} alt={alt} />
+  </a>
+);
+
 const LandingPage = () => (
   <Section.Container id="home" Background={Background}>
     <Fragment>
@@ -47,7 +58,9 @@ const LandingPage = () => (
         color="primary"
         fontSize={[5, 6, 8]}
         mb={[3, 4, 5]}
-      />
+      >
+        Hello, I'm Nick
+      </Heading>
 
       <Heading
         is="h2"
@@ -57,7 +70,15 @@ const LandingPage = () => (
         textAlign="center"
       >
         <TextLoop>
-          <p style={{ width: 400 }} />
+          <Flex style={{ width: 300 }}>
+            Developer
+            <Logo
+              url="https://www.contentful.com/"
+              logo={Developer}
+              alt="Powered by Contentful"
+            />
+          </Flex>
+          {/* <p style={{ width: 400 }}>test 2</p> */}
         </TextLoop>
       </Heading>
       <Flex alignItems="center" justifyContent="center" flexWrap="wrap">

@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Text, Flex, Box } from 'rebass';
-import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import { Box, Flex, Text } from 'rebass';
+import styled from 'styled-components';
 import ContentfulLogo from './Logo/Contenful.svg';
 import GatsbyLogo from './Logo/Gatsby.svg';
 

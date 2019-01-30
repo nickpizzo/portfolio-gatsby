@@ -1,13 +1,11 @@
 import React from 'react';
-import { Subhead, Image, Text, Flex, Label } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
+import { Flex, Image, Label, Subhead, Text } from 'rebass';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+import { Card, CardContainer } from '../components/Card';
+import ImageSubtitle from '../components/ImageSubtitle';
 import Section from '../components/Section';
-import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
-import ImageSubtitle from '../components/ImageSubtitle';
 
 const Background = () => (
   <div>
